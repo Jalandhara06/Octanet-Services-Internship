@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">TravelCo</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <h1>Explore the World with TravelCo</h1>
+            <p>Discover new places and experience adventures like never before.</p>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get Started</button>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>TravelCo is dedicated to helping you find the perfect travel destinations and adventures.</p>
+        </section>
+        <section id="destinations" class="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img1.jpg" alt="Destination 1">
+                    <h3>Paris, France</h3>
+                    <p>Explore the city of lights and love.</p>
+                </div>
+                <div class="card">
+                    <img src="img2.jpg" alt="Destination 2">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Experience the vibrant culture and technology.</p>
+                </div>
+                <div class="card">
+                    <img src="img3.jpg" alt="Destination 3">
+                    <h3>New York, USA</h3>
+                    <p>Discover the city that never sleeps.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 TravelCo. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
